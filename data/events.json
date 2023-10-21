@@ -1,0 +1,126 @@
+[
+  null,
+  {
+    "name": "join",
+    "temp": "member",
+    "event-type": "6",
+    "_id": "KSZsS",
+    "actions": [
+      {
+        "server": "0",
+        "varName": "",
+        "info": "17",
+        "storage": "1",
+        "varName2": "count",
+        "name": "Store Server Info"
+      },
+      {
+        "channel": "103",
+        "varName": "1058300724221583381",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "有人加入",
+            "url": "",
+            "color": "#00ffba",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "嗨 ${tempVars(\"member\")} 歡迎來到 Y.A.X.S\n我們現在有 ${tempVars(\"count\")} 成員\n",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      }
+    ]
+  },
+  {
+    "name": "leave",
+    "temp": "member",
+    "event-type": "7",
+    "_id": "cKsUv",
+    "actions": [
+      {
+        "server": "0",
+        "varName": "",
+        "info": "17",
+        "storage": "1",
+        "varName2": "count",
+        "name": "Store Server Info"
+      },
+      {
+        "channel": "103",
+        "varName": "1146406011985465355",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "有人離開",
+            "url": "",
+            "color": "#00ffba",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": " ${tempVars(\"member\")} 離開了 Y.A.X.S\n我們現在有 ${tempVars(\"count\")} 成員\n",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      }
+    ]
+  },
+  {
+    "name": "status",
+    "temp": "",
+    "event-type": "48",
+    "_id": "VBsad",
+    "actions": [
+      {
+        "info": "4",
+        "storage": "1",
+        "varName2": "users",
+        "name": "Store Bot Client Info"
+      },
+      { "status": "0", "name": "Set Bot Status" },
+      {
+        "gameName": "目前服務 ${tempVars(\"users\")} 人",
+        "gameLink": "",
+        "activityType": "PLAYING",
+        "name": "Set Bot Game"
+      }
+    ]
+  }
+]

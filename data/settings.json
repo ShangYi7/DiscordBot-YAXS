@@ -1,0 +1,50 @@
+{
+  "token": "Your bot token",
+  "client": "1138020973552074792",
+  "tag": "!",
+  "case": "false",
+  "separator": "\\s+",
+  "commandsOrder": [
+    "booIi",
+    "BMSec",
+    [
+      {
+        "name": "tickets",
+        "_id": "iVBkC",
+        "isOpen": true,
+        "options": 1,
+        "color": "#7661a8",
+        "icon": "ticket"
+      },
+      "feCRs",
+      "rnKZX"
+    ],
+    [
+      {
+        "name": "tutorials",
+        "_id": "tCTvg",
+        "isOpen": true,
+        "options": 0,
+        "color": "#ffffff",
+        "icon": ""
+      },
+      "lZCKC"
+    ]
+  ],
+  "eventsOrder": ["KSZsS", "VBsad", "cKsUv"],
+  "modules": {
+    "discord.js": ["", true],
+    "fstorm": ["", true],
+    "jimp": ["", true],
+    "@discordjs/voice": ["", false],
+    "@discordjs/opus": ["", false],
+    "ffmpeg-static": ["", false],
+    "tweetnacl": ["", false],
+    "youtube-dl-exec": ["", false],
+    "ytdl-core": ["", false],
+    "loadavg-windows": ["", true],
+    "discord-html-transcripts": ["2.6.0", true]
+  },
+  "ownerId": "1138020973552074792",
+  "Bot Intents": { "customData": { "Bot Intents": { "intents": -1 } } }
+}

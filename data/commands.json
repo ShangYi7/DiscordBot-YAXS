@@ -1,0 +1,1331 @@
+[
+  null,
+  {
+    "name": "ping",
+    "permissions": "NONE",
+    "permissions2": "NONE",
+    "restriction": "1",
+    "_id": "booIi",
+    "actions": [
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "pong!",
+        "buttons": [],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [],
+        "reply": true,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      }
+    ],
+    "comType": "4",
+    "description": "pings the bot"
+  },
+  {
+    "name": "verify",
+    "permissions": "NONE",
+    "permissions2": "NONE",
+    "restriction": "1",
+    "_id": "BMSec",
+    "actions": [
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [
+          {
+            "name": "verify",
+            "type": "PRIMARY",
+            "id": "msg-button-82f0aee",
+            "row": "",
+            "url": "",
+            "emoji": "✅",
+            "mode": "PERSISTENT",
+            "time": "",
+            "actions": [
+              {
+                "member": "1",
+                "varName2": "",
+                "role": "101",
+                "varName": "1058159407566946345",
+                "reason": "",
+                "name": "Add Member Role"
+              }
+            ]
+          }
+        ],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "伺服器規則",
+            "url": "",
+            "color": "",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "1.此伺服器為 100% RP 角色扮演，請勿違反RP。\n\n2.遊戲中禁止使用任何通訊軟體、網站。(如:Discord )\n\n3.禁止在伺服器和DC內宣傳其他伺服器。\n\n4.官方人員之規則、公告、命令不得違反(官方人員參與劇情除外)，情況嚴重則給予警告，集滿三隻則逐出本服。\n\n5.禁止胡亂使用 OCC。(除呼叫管理員)\n\n6.禁止使用任何BUG，違者警告一支。\n\n7.禁止安裝槍線或其他影響RP特效。\n\n8.Steam名稱或Fivem設定請與申請時填寫的名稱相同，且請使用中文字名字 並且有名有姓。 (外國名中文字也可以 如:威爾史密斯)\n\n10.RP內的任何糾紛請於RP內解決，請勿帶出RP外。\n\n11.請勿惡意丟棄或刷出大量物品，造成伺服器負擔。\n\n12.禁止偷竊任何飛機、直升機或任何軍事載具。\n\n13.禁止使用任何破壞平衡之軟硬體。\n\n14.以上規則最終解釋權歸本團隊所有。\n\n以上資訊全部閱讀完畢後，請點擊✅以進行最後一步",
+            "fields": [],
+            "author": "",
+            "authorUrl": "",
+            "authorIcon": "",
+            "footerText": "",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      }
+    ],
+    "comType": "4",
+    "description": "驗證"
+  },
+  {
+    "name": "tickets",
+    "permissions": "ADMINISTRATOR",
+    "permissions2": "NONE",
+    "restriction": "1",
+    "_id": "rnKZX",
+    "actions": [
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [],
+        "selectMenus": [
+          {
+            "placeholder": "你沒有選擇任何內容",
+            "id": "msg-select-0b75c13",
+            "tempVarName": "var",
+            "row": "",
+            "min": "1",
+            "max": "1",
+            "mode": "PERSISTENT",
+            "time": "",
+            "options": [
+              {
+                "label": "bug",
+                "description": "bug 回報",
+                "value": "bug",
+                "emoji": "⚠️",
+                "default": "false"
+              },
+              {
+                "label": "人設",
+                "description": "人設問題,想法",
+                "value": "Personality",
+                "emoji": "👦",
+                "default": "false"
+              },
+              {
+                "label": "建議",
+                "description": "提出你的觀點一起討論",
+                "value": "Opinion",
+                "emoji": "👍",
+                "default": "false"
+              }
+            ],
+            "actions": [
+              {
+                "storage": "1",
+                "varName": "var",
+                "comparison": "1",
+                "value": "bug",
+                "branch": { "iftrue": "2", "iffalse": "0", "iftrueVal": "5" },
+                "name": "Check Variable"
+              },
+              {
+                "storage": "1",
+                "varName": "var",
+                "comparison": "1",
+                "value": "Personality",
+                "branch": { "iftrue": "2", "iffalse": "0", "iftrueVal": "13" },
+                "name": "Check Variable"
+              },
+              {
+                "storage": "1",
+                "varName": "var",
+                "comparison": "1",
+                "value": "Opinion",
+                "branch": { "iftrue": "2", "iffalse": "1", "iftrueVal": "21" },
+                "name": "Check Variable"
+              },
+              { "name": "End Action Sequence" },
+              {
+                "member": "1",
+                "varName": "",
+                "info": "2",
+                "storage": "1",
+                "varName2": "username",
+                "name": "Store Member Info"
+              },
+              {
+                "channelName": "bug回報-${tempVars(\"username\")}",
+                "topic": "",
+                "position": "",
+                "storage": "1",
+                "varName": "channel1",
+                "categoryID": "1144513531283243040",
+                "reason": "",
+                "name": "Create Text Channel"
+              },
+              {
+                "storage": "3",
+                "varName": "channel1",
+                "permission": "VIEW_CHANNEL",
+                "state": "1",
+                "reason": "",
+                "name": "Set Channel Permissions"
+              },
+              {
+                "channel": "3",
+                "varName": "channel1",
+                "member": "1",
+                "varName2": "",
+                "permission": "VIEW_CHANNEL",
+                "state": "0",
+                "reason": "",
+                "name": "Set Member Channel Perms"
+              },
+              {
+                "channel": "3",
+                "varName": "channel1",
+                "role": "101",
+                "varName2": "1058157990391320617",
+                "permission": "VIEW_CHANNEL",
+                "state": "0",
+                "reason": "",
+                "name": "Set Role Channel Perms"
+              },
+              {
+                "channel": "5",
+                "varName": "channel1",
+                "message": "",
+                "buttons": [
+                  {
+                    "name": "Close",
+                    "type": "DANGER",
+                    "id": "msg-button-b0d8fcb",
+                    "row": "",
+                    "url": "",
+                    "emoji": "",
+                    "mode": "PERSISTENT",
+                    "time": "",
+                    "actions": [
+                      {
+                        "channel": "0",
+                        "varName": "",
+                        "message": "請等待...",
+                        "buttons": [],
+                        "selectMenus": [],
+                        "attachments": [],
+                        "embeds": [],
+                        "reply": true,
+                        "ephemeral": false,
+                        "tts": false,
+                        "overwrite": false,
+                        "dontSend": false,
+                        "editMessage": "0",
+                        "editMessageVarName": "",
+                        "storage": "0",
+                        "varName2": "",
+                        "name": "Send Message"
+                      },
+                      {
+                        "channel": "0",
+                        "varName": "",
+                        "info": "0",
+                        "storage": "1",
+                        "varName2": "object",
+                        "name": "Store Channel Info"
+                      },
+                      {
+                        "channel": "0",
+                        "varName": "",
+                        "info": "2",
+                        "storage": "1",
+                        "varName2": "name",
+                        "name": "Store Channel Info"
+                      },
+                      {
+                        "useMinify": "1",
+                        "saveImages": "1",
+                        "useCDN": "1",
+                        "channelObj": "1",
+                        "channelID": "object",
+                        "storage": "1",
+                        "varName": "transcript",
+                        "name": "Transcript"
+                      },
+                      {
+                        "input": "${tempVars(\"transcript\")}",
+                        "format": "",
+                        "filename": "${tempVars(\"name\")}.html",
+                        "filepath": "./",
+                        "filepath2": "",
+                        "filetask": "1",
+                        "input2": "",
+                        "togglestatus": "no",
+                        "name": "File Control"
+                      },
+                      {
+                        "channel": "103",
+                        "varName": "1144216167318290524",
+                        "message": "",
+                        "buttons": [],
+                        "selectMenus": [],
+                        "attachments": [
+                          {
+                            "url": "./${tempVars(\"name\")}.html",
+                            "name": "",
+                            "spoiler": false
+                          }
+                        ],
+                        "embeds": [
+                          {
+                            "title": "",
+                            "url": "",
+                            "color": "",
+                            "timestamp": "false",
+                            "imageUrl": "",
+                            "thumbUrl": "",
+                            "description": "開啟票口 ${tempVars(\"name\")} \n紀錄 :",
+                            "fields": [],
+                            "author": "",
+                            "authorUrl": "",
+                            "authorIcon": "",
+                            "footerText": "",
+                            "footerIconUrl": ""
+                          }
+                        ],
+                        "reply": true,
+                        "ephemeral": false,
+                        "tts": false,
+                        "overwrite": false,
+                        "dontSend": false,
+                        "editMessage": "0",
+                        "editMessageVarName": "",
+                        "storage": "0",
+                        "varName2": "",
+                        "name": "Send Message"
+                      },
+                      { "time": "2", "measurement": "1", "name": "Wait" },
+                      {
+                        "storage": "0",
+                        "varName": "",
+                        "reason": "",
+                        "name": "Delete Channel"
+                      },
+                      {
+                        "input": "",
+                        "format": "",
+                        "filename": "${tempVars(\"name\")}.html",
+                        "filepath": "./",
+                        "filepath2": "",
+                        "filetask": "3",
+                        "input2": "",
+                        "togglestatus": "no",
+                        "name": "File Control"
+                      }
+                    ]
+                  }
+                ],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "${server.name}",
+                    "url": "",
+                    "color": "00ffba",
+                    "timestamp": "false",
+                    "imageUrl": "",
+                    "thumbUrl": "https://cdn.discordapp.com/attachments/1114208679617642597/1137674156067012648/yaxs.png?width=410&height=410",
+                    "description": "**請檢視以下訊息:**\n地點:\n說明:\n圖片:",
+                    "fields": [],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              },
+              {
+                "channel": "0",
+                "varName": "",
+                "message": "你的票口已創建 ${tempVars(\"channel1\")}",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [],
+                "reply": true,
+                "ephemeral": true,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              },
+              { "name": "End Action Sequence" },
+              {
+                "member": "1",
+                "varName": "",
+                "info": "2",
+                "storage": "1",
+                "varName2": "username",
+                "name": "Store Member Info"
+              },
+              {
+                "channelName": "人設-${tempVars(\"username\")}",
+                "topic": "",
+                "position": "",
+                "storage": "1",
+                "varName": "channel2",
+                "categoryID": "1144514076916072498",
+                "reason": "",
+                "name": "Create Text Channel"
+              },
+              {
+                "storage": "3",
+                "varName": "channel2",
+                "permission": "VIEW_CHANNEL",
+                "state": "1",
+                "reason": "",
+                "name": "Set Channel Permissions"
+              },
+              {
+                "channel": "3",
+                "varName": "channel2",
+                "member": "1",
+                "varName2": "",
+                "permission": "VIEW_CHANNEL",
+                "state": "0",
+                "reason": "",
+                "name": "Set Member Channel Perms"
+              },
+              {
+                "channel": "3",
+                "varName": "channel2",
+                "role": "101",
+                "varName2": "1058157990391320617",
+                "permission": "VIEW_CHANNEL",
+                "state": "0",
+                "reason": "",
+                "name": "Set Role Channel Perms"
+              },
+              {
+                "channel": "5",
+                "varName": "channel2",
+                "message": "",
+                "buttons": [
+                  {
+                    "name": "Close",
+                    "type": "DANGER",
+                    "id": "msg-button-42649f4",
+                    "row": "",
+                    "url": "",
+                    "emoji": "",
+                    "mode": "PERSISTENT",
+                    "time": "",
+                    "actions": [
+                      {
+                        "channel": "0",
+                        "varName": "",
+                        "message": "請等待...",
+                        "buttons": [],
+                        "selectMenus": [],
+                        "attachments": [],
+                        "embeds": [],
+                        "reply": true,
+                        "ephemeral": false,
+                        "tts": false,
+                        "overwrite": false,
+                        "dontSend": false,
+                        "editMessage": "0",
+                        "editMessageVarName": "",
+                        "storage": "0",
+                        "varName2": "",
+                        "name": "Send Message"
+                      },
+                      {
+                        "channel": "0",
+                        "varName": "",
+                        "info": "0",
+                        "storage": "1",
+                        "varName2": "object",
+                        "name": "Store Channel Info"
+                      },
+                      {
+                        "channel": "0",
+                        "varName": "",
+                        "info": "2",
+                        "storage": "1",
+                        "varName2": "name",
+                        "name": "Store Channel Info"
+                      },
+                      {
+                        "useMinify": "1",
+                        "saveImages": "1",
+                        "useCDN": "1",
+                        "channelObj": "1",
+                        "channelID": "object",
+                        "storage": "1",
+                        "varName": "transcript",
+                        "name": "Transcript"
+                      },
+                      {
+                        "input": "${tempVars(\"transcript\")}",
+                        "format": "",
+                        "filename": "${tempVars(\"name\")}.html",
+                        "filepath": "./",
+                        "filepath2": "",
+                        "filetask": "1",
+                        "input2": "",
+                        "togglestatus": "no",
+                        "name": "File Control"
+                      },
+                      {
+                        "channel": "103",
+                        "varName": "1144216167318290524",
+                        "message": "",
+                        "buttons": [],
+                        "selectMenus": [],
+                        "attachments": [
+                          {
+                            "url": "./${tempVars(\"name\")}.html",
+                            "name": "",
+                            "spoiler": false
+                          }
+                        ],
+                        "embeds": [
+                          {
+                            "title": "",
+                            "url": "",
+                            "color": "",
+                            "timestamp": "false",
+                            "imageUrl": "",
+                            "thumbUrl": "",
+                            "description": "開啟票口 ${tempVars(\"name\")} \n紀錄 :",
+                            "fields": [],
+                            "author": "",
+                            "authorUrl": "",
+                            "authorIcon": "",
+                            "footerText": "",
+                            "footerIconUrl": ""
+                          }
+                        ],
+                        "reply": true,
+                        "ephemeral": false,
+                        "tts": false,
+                        "overwrite": false,
+                        "dontSend": false,
+                        "editMessage": "0",
+                        "editMessageVarName": "",
+                        "storage": "0",
+                        "varName2": "",
+                        "name": "Send Message"
+                      },
+                      { "time": "2", "measurement": "1", "name": "Wait" },
+                      {
+                        "storage": "0",
+                        "varName": "",
+                        "reason": "",
+                        "name": "Delete Channel"
+                      },
+                      {
+                        "input": "",
+                        "format": "",
+                        "filename": "${tempVars(\"name\")}.html",
+                        "filepath": "./",
+                        "filepath2": "",
+                        "filetask": "3",
+                        "input2": "",
+                        "togglestatus": "no",
+                        "name": "File Control"
+                      }
+                    ]
+                  }
+                ],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "${server.name}",
+                    "url": "",
+                    "color": "00ffba",
+                    "timestamp": "false",
+                    "imageUrl": "",
+                    "thumbUrl": "https://cdn.discordapp.com/attachments/1114208679617642597/1137674156067012648/yaxs.png?width=410&height=410",
+                    "description": "**請檢視以下訊息:**\n地點:\n說明:\n圖片:",
+                    "fields": [],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              },
+              {
+                "channel": "0",
+                "varName": "",
+                "message": "你的票口已創建 ${tempVars(\"channel2\")}",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [],
+                "reply": true,
+                "ephemeral": true,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              },
+              { "name": "End Action Sequence" },
+              {
+                "member": "1",
+                "varName": "",
+                "info": "2",
+                "storage": "1",
+                "varName2": "username",
+                "name": "Store Member Info"
+              },
+              {
+                "channelName": "建議-${tempVars(\"username\")}",
+                "topic": "",
+                "position": "",
+                "storage": "1",
+                "varName": "channel3",
+                "categoryID": "1144514571919446016",
+                "reason": "",
+                "name": "Create Text Channel"
+              },
+              {
+                "storage": "3",
+                "varName": "channel3",
+                "permission": "VIEW_CHANNEL",
+                "state": "1",
+                "reason": "",
+                "name": "Set Channel Permissions"
+              },
+              {
+                "channel": "3",
+                "varName": "channel3",
+                "member": "1",
+                "varName2": "",
+                "permission": "VIEW_CHANNEL",
+                "state": "0",
+                "reason": "",
+                "name": "Set Member Channel Perms"
+              },
+              {
+                "channel": "3",
+                "varName": "channel3",
+                "role": "101",
+                "varName2": "1058157990391320617",
+                "permission": "VIEW_CHANNEL",
+                "state": "0",
+                "reason": "",
+                "name": "Set Role Channel Perms"
+              },
+              {
+                "channel": "5",
+                "varName": "channel3",
+                "message": "",
+                "buttons": [
+                  {
+                    "name": "Close",
+                    "type": "DANGER",
+                    "id": "msg-button-4882158",
+                    "row": "",
+                    "url": "",
+                    "emoji": "",
+                    "mode": "PERSISTENT",
+                    "time": "",
+                    "actions": [
+                      {
+                        "channel": "0",
+                        "varName": "",
+                        "message": "請等待...",
+                        "buttons": [],
+                        "selectMenus": [],
+                        "attachments": [],
+                        "embeds": [],
+                        "reply": true,
+                        "ephemeral": false,
+                        "tts": false,
+                        "overwrite": false,
+                        "dontSend": false,
+                        "editMessage": "0",
+                        "editMessageVarName": "",
+                        "storage": "0",
+                        "varName2": "",
+                        "name": "Send Message"
+                      },
+                      {
+                        "channel": "0",
+                        "varName": "",
+                        "info": "0",
+                        "storage": "1",
+                        "varName2": "object",
+                        "name": "Store Channel Info"
+                      },
+                      {
+                        "channel": "0",
+                        "varName": "",
+                        "info": "2",
+                        "storage": "1",
+                        "varName2": "name",
+                        "name": "Store Channel Info"
+                      },
+                      {
+                        "useMinify": "1",
+                        "saveImages": "1",
+                        "useCDN": "1",
+                        "channelObj": "1",
+                        "channelID": "object",
+                        "storage": "1",
+                        "varName": "transcript",
+                        "name": "Transcript"
+                      },
+                      {
+                        "input": "${tempVars(\"transcript\")}",
+                        "format": "",
+                        "filename": "${tempVars(\"name\")}.html",
+                        "filepath": "./",
+                        "filepath2": "",
+                        "filetask": "1",
+                        "input2": "",
+                        "togglestatus": "no",
+                        "name": "File Control"
+                      },
+                      {
+                        "channel": "103",
+                        "varName": "1144216167318290524",
+                        "message": "",
+                        "buttons": [],
+                        "selectMenus": [],
+                        "attachments": [
+                          {
+                            "url": "./${tempVars(\"name\")}.html",
+                            "name": "",
+                            "spoiler": false
+                          }
+                        ],
+                        "embeds": [
+                          {
+                            "title": "",
+                            "url": "",
+                            "color": "",
+                            "timestamp": "false",
+                            "imageUrl": "",
+                            "thumbUrl": "",
+                            "description": "開啟票口 ${tempVars(\"name\")} \n紀錄 :",
+                            "fields": [],
+                            "author": "",
+                            "authorUrl": "",
+                            "authorIcon": "",
+                            "footerText": "",
+                            "footerIconUrl": ""
+                          }
+                        ],
+                        "reply": true,
+                        "ephemeral": false,
+                        "tts": false,
+                        "overwrite": false,
+                        "dontSend": false,
+                        "editMessage": "0",
+                        "editMessageVarName": "",
+                        "storage": "0",
+                        "varName2": "",
+                        "name": "Send Message"
+                      },
+                      { "time": "2", "measurement": "1", "name": "Wait" },
+                      {
+                        "storage": "0",
+                        "varName": "",
+                        "reason": "",
+                        "name": "Delete Channel"
+                      },
+                      {
+                        "input": "",
+                        "format": "",
+                        "filename": "${tempVars(\"name\")}.html",
+                        "filepath": "./",
+                        "filepath2": "",
+                        "filetask": "3",
+                        "input2": "",
+                        "togglestatus": "no",
+                        "name": "File Control"
+                      }
+                    ]
+                  }
+                ],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "${server.name}",
+                    "url": "",
+                    "color": "00ffba",
+                    "timestamp": "false",
+                    "imageUrl": "",
+                    "thumbUrl": "https://cdn.discordapp.com/attachments/1114208679617642597/1137674156067012648/yaxs.png?width=410&height=410",
+                    "description": "**請檢視以下訊息:**\n地點:\n說明:\n圖片:",
+                    "fields": [],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": false,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              },
+              {
+                "channel": "0",
+                "varName": "",
+                "message": "你的票口已創建 ${tempVars(\"channel3\")}",
+                "buttons": [],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [],
+                "reply": true,
+                "ephemeral": true,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              },
+              { "name": "End Action Sequence" }
+            ]
+          }
+        ],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "${server.name}",
+            "url": "",
+            "color": "00ffba",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "**票口回報**\n\n開啟票口後輸入相應格式 將有專人為您服務\n----------------\n",
+            "fields": [],
+            "author": "Y.A.X.S",
+            "authorUrl": "",
+            "authorIcon": "https://cdn.discordapp.com/attachments/1114208679617642597/1137674156067012648/yaxs.png",
+            "footerText": "Shang Yi",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      }
+    ],
+    "comType": "0"
+  },
+  {
+    "name": "Apply",
+    "permissions": "ADMINISTRATOR",
+    "permissions2": "NONE",
+    "restriction": "1",
+    "_id": "lZCKC",
+    "actions": [
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "",
+        "buttons": [
+          {
+            "name": "入城申請",
+            "type": "SUCCESS",
+            "id": "msg-button-cf6b2be",
+            "row": "1",
+            "url": "",
+            "emoji": "✅",
+            "mode": "PERSISTENT",
+            "time": "",
+            "actions": [
+              {
+                "title": "personal data",
+                "textInputs": [
+                  {
+                    "name": "01 | 您的 Discord id",
+                    "placeholder": "Shang Yi#0390, shang_yi6",
+                    "minLength": "0",
+                    "maxLength": "1000",
+                    "id": "id",
+                    "row": "1",
+                    "style": "SHORT",
+                    "required": "true"
+                  },
+                  {
+                    "name": "02 | 您的年齡",
+                    "placeholder": "",
+                    "minLength": "0",
+                    "maxLength": "1000",
+                    "id": "age",
+                    "row": "2",
+                    "style": "SHORT",
+                    "required": "true"
+                  },
+                  {
+                    "name": "03 | 是否有任何RP經驗？",
+                    "placeholder": "玩過的全RP伺服器名字,若沒有請填寫無",
+                    "minLength": "0",
+                    "maxLength": "1000",
+                    "id": "experience",
+                    "row": "3",
+                    "style": "SHORT",
+                    "required": "true"
+                  },
+                  {
+                    "name": "04 | 您是否已看過伺服器的規則並能夠為您的行為負則",
+                    "placeholder": "是/否",
+                    "minLength": "0",
+                    "maxLength": "1000",
+                    "id": "Behavior",
+                    "row": "4",
+                    "style": "SHORT",
+                    "required": "true"
+                  }
+                ],
+                "name": "Show Modal"
+              },
+              {
+                "channel": "0",
+                "varName": "",
+                "message": "",
+                "buttons": [
+                  {
+                    "name": "下一頁",
+                    "type": "PRIMARY",
+                    "id": "msg-button-aa7de02",
+                    "row": "",
+                    "url": "",
+                    "emoji": "📑",
+                    "mode": "MULTI",
+                    "time": "",
+                    "actions": [
+                      {
+                        "title": "explain",
+                        "textInputs": [
+                          {
+                            "name": "05 | 請說明超人扮演",
+                            "placeholder": "",
+                            "minLength": "0",
+                            "maxLength": "1000",
+                            "id": "Superman",
+                            "row": "1",
+                            "style": "SHORT",
+                            "required": "true"
+                          },
+                          {
+                            "name": "06 | 請說明恐懼扮演",
+                            "placeholder": "",
+                            "minLength": "0",
+                            "maxLength": "1000",
+                            "id": "fear",
+                            "row": "2",
+                            "style": "SHORT",
+                            "required": "true"
+                          },
+                          {
+                            "name": "07 | 遊戲崩潰在RP中該怎麼說出",
+                            "placeholder": "",
+                            "minLength": "0",
+                            "maxLength": "1000",
+                            "id": "collapse",
+                            "row": "3",
+                            "style": "SHORT",
+                            "required": "true"
+                          },
+                          {
+                            "name": "08 | 下線在RP中該怎麼說出",
+                            "placeholder": "",
+                            "minLength": "0",
+                            "maxLength": "1000",
+                            "id": "offline",
+                            "row": "4",
+                            "style": "SHORT",
+                            "required": "true"
+                          }
+                        ],
+                        "name": "Show Modal"
+                      },
+                      {
+                        "channel": "0",
+                        "varName": "",
+                        "message": "",
+                        "buttons": [
+                          {
+                            "name": "下一頁",
+                            "type": "PRIMARY",
+                            "id": "msg-button-c165888",
+                            "row": "",
+                            "url": "",
+                            "emoji": "📑",
+                            "mode": "MULTI",
+                            "time": "",
+                            "actions": [
+                              {
+                                "title": "Personality",
+                                "textInputs": [
+                                  {
+                                    "name": "09 | 角色姓名",
+                                    "placeholder": "亨特·馬克思/謝金碩",
+                                    "minLength": "0",
+                                    "maxLength": "1000",
+                                    "id": "Character name",
+                                    "row": "1",
+                                    "style": "SHORT",
+                                    "required": "true"
+                                  },
+                                  {
+                                    "name": "10 | 國籍",
+                                    "placeholder": "",
+                                    "minLength": "0",
+                                    "maxLength": "1000",
+                                    "id": "nationality",
+                                    "row": "2",
+                                    "style": "SHORT",
+                                    "required": "true"
+                                  },
+                                  {
+                                    "name": "11 | 出生日期,年齡",
+                                    "placeholder": "ex.1998/01/25,(25)",
+                                    "minLength": "0",
+                                    "maxLength": "1000",
+                                    "id": "date of birth",
+                                    "row": "3",
+                                    "style": "SHORT",
+                                    "required": "true"
+                                  },
+                                  {
+                                    "name": "12 | 角色性格優劣",
+                                    "placeholder": "描述角色的個性優缺點",
+                                    "minLength": "0",
+                                    "maxLength": "1000",
+                                    "id": "Pros and cons",
+                                    "row": "4",
+                                    "style": "SHORT",
+                                    "required": "true"
+                                  },
+                                  {
+                                    "name": "13 | 角色背景故事",
+                                    "placeholder": "越詳細角色就越立體, 請不要吝嗇",
+                                    "minLength": "0",
+                                    "maxLength": "1000",
+                                    "id": "story",
+                                    "row": "5",
+                                    "style": "PARAGRAPH",
+                                    "required": "true"
+                                  }
+                                ],
+                                "name": "Show Modal"
+                              },
+                              {
+                                "channel": "103",
+                                "varName": "1058300938160455710",
+                                "message": "",
+                                "buttons": [],
+                                "selectMenus": [],
+                                "attachments": [],
+                                "embeds": [
+                                  {
+                                    "title": "市民申請",
+                                    "url": "",
+                                    "color": "00ffba",
+                                    "timestamp": "true",
+                                    "imageUrl": "",
+                                    "thumbUrl": "",
+                                    "description": "申請人: ${member}\n",
+                                    "fields": [
+                                      {
+                                        "name": "Discord id",
+                                        "value": "${tempVars(\"id\")}",
+                                        "inline": "false"
+                                      },
+                                      {
+                                        "name": "年齡",
+                                        "value": "${tempVars(\"age\")}",
+                                        "inline": "false"
+                                      },
+                                      {
+                                        "name": "RP經驗",
+                                        "value": "${tempVars(\"experience\")}",
+                                        "inline": "false"
+                                      },
+                                      {
+                                        "name": "是否為自己行為負責",
+                                        "value": "${tempVars(\"Behavior\")}",
+                                        "inline": "false"
+                                      },
+                                      {
+                                        "name": "超人扮演解釋",
+                                        "value": "${tempVars(\"Superman\")}",
+                                        "inline": "false"
+                                      },
+                                      {
+                                        "name": "恐懼扮演說明",
+                                        "value": "${tempVars(\"fear\")}",
+                                        "inline": "false"
+                                      },
+                                      {
+                                        "name": "崩潰術語",
+                                        "value": "${tempVars(\"collapse\")}",
+                                        "inline": "false"
+                                      },
+                                      {
+                                        "name": "下線術語",
+                                        "value": "${tempVars(\"offline\")}",
+                                        "inline": "false"
+                                      },
+                                      {
+                                        "name": "角色姓名",
+                                        "value": "${tempVars(\"Character name\")}",
+                                        "inline": "false"
+                                      },
+                                      {
+                                        "name": "國籍",
+                                        "value": "${tempVars(\"nationality\")}",
+                                        "inline": "false"
+                                      },
+                                      {
+                                        "name": "出生日期",
+                                        "value": "${tempVars(\"date of birth\")}",
+                                        "inline": "false"
+                                      },
+                                      {
+                                        "name": "性格優缺點",
+                                        "value": "${tempVars(\"Pros and cons\")}",
+                                        "inline": "false"
+                                      },
+                                      {
+                                        "name": "角色故事",
+                                        "value": "${tempVars(\"story\")}",
+                                        "inline": "false"
+                                      }
+                                    ],
+                                    "author": "Y.A.X.S",
+                                    "authorUrl": "",
+                                    "authorIcon": "https://cdn.discordapp.com/attachments/1114208679617642597/1137674156067012648/yaxs.png",
+                                    "footerText": "Shang Yi",
+                                    "footerIconUrl": ""
+                                  }
+                                ],
+                                "reply": true,
+                                "ephemeral": false,
+                                "tts": false,
+                                "overwrite": false,
+                                "dontSend": false,
+                                "editMessage": "0",
+                                "editMessageVarName": "",
+                                "storage": "0",
+                                "varName2": "",
+                                "name": "Send Message"
+                              },
+                              {
+                                "channel": "0",
+                                "varName": "",
+                                "message": "",
+                                "buttons": [],
+                                "selectMenus": [],
+                                "attachments": [],
+                                "embeds": [
+                                  {
+                                    "title": "已完成入城申請",
+                                    "url": "",
+                                    "color": "00ffba",
+                                    "timestamp": "false",
+                                    "imageUrl": "",
+                                    "thumbUrl": "",
+                                    "description": "請等待面試人員私訊你,\n跟你預約面試時間",
+                                    "fields": [],
+                                    "author": "Y.A.X.S",
+                                    "authorUrl": "",
+                                    "authorIcon": "https://cdn.discordapp.com/attachments/1114208679617642597/1137674156067012648/yaxs.png?width=410&height=410",
+                                    "footerText": "Shang Yi",
+                                    "footerIconUrl": ""
+                                  }
+                                ],
+                                "reply": true,
+                                "ephemeral": true,
+                                "tts": false,
+                                "overwrite": false,
+                                "dontSend": false,
+                                "editMessage": "0",
+                                "editMessageVarName": "",
+                                "storage": "0",
+                                "varName2": "",
+                                "name": "Send Message"
+                              }
+                            ]
+                          }
+                        ],
+                        "selectMenus": [],
+                        "attachments": [],
+                        "embeds": [
+                          {
+                            "title": "請繼續填寫下一頁",
+                            "url": "",
+                            "color": "00ffba",
+                            "timestamp": "false",
+                            "imageUrl": "",
+                            "thumbUrl": "",
+                            "description": "加油你快寫完了!!",
+                            "fields": [],
+                            "author": "",
+                            "authorUrl": "",
+                            "authorIcon": "",
+                            "footerText": "",
+                            "footerIconUrl": ""
+                          }
+                        ],
+                        "reply": true,
+                        "ephemeral": true,
+                        "tts": false,
+                        "overwrite": false,
+                        "dontSend": false,
+                        "editMessage": "0",
+                        "editMessageVarName": "",
+                        "storage": "0",
+                        "varName2": "",
+                        "name": "Send Message"
+                      }
+                    ]
+                  }
+                ],
+                "selectMenus": [],
+                "attachments": [],
+                "embeds": [
+                  {
+                    "title": "請繼續填寫下一頁",
+                    "url": "",
+                    "color": "00ffba",
+                    "timestamp": "false",
+                    "imageUrl": "",
+                    "thumbUrl": "",
+                    "description": "",
+                    "fields": [],
+                    "author": "",
+                    "authorUrl": "",
+                    "authorIcon": "",
+                    "footerText": "",
+                    "footerIconUrl": ""
+                  }
+                ],
+                "reply": true,
+                "ephemeral": true,
+                "tts": false,
+                "overwrite": false,
+                "dontSend": false,
+                "editMessage": "0",
+                "editMessageVarName": "",
+                "storage": "0",
+                "varName2": "",
+                "name": "Send Message"
+              }
+            ]
+          }
+        ],
+        "selectMenus": [],
+        "attachments": [],
+        "embeds": [
+          {
+            "title": "點擊下方按鈕進行入城申請",
+            "url": "",
+            "color": "00ffba",
+            "timestamp": "false",
+            "imageUrl": "",
+            "thumbUrl": "",
+            "description": "如沒有收到私訊請確認是否已允許來自伺服器成員的私人訊息,\n如有任何問題請開工單詢問",
+            "fields": [],
+            "author": "Y.A.X.S",
+            "authorUrl": "",
+            "authorIcon": "https://cdn.discordapp.com/attachments/1114208679617642597/1137674156067012648/yaxs.png",
+            "footerText": "Shang Yi",
+            "footerIconUrl": ""
+          }
+        ],
+        "reply": true,
+        "ephemeral": false,
+        "tts": false,
+        "overwrite": false,
+        "dontSend": false,
+        "editMessage": "0",
+        "editMessageVarName": "",
+        "storage": "0",
+        "varName2": "",
+        "name": "Send Message"
+      }
+    ],
+    "comType": "4"
+  }
+]
